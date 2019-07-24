@@ -1,0 +1,56 @@
+<form #form="ngForm" autocomplete="off" (submit)="onSubmit(form)">
+    <input type="hidden" name="HourId" [value]="service.formData.HourId">
+    <div class="form-group" class="row p-2">
+        <div class="input-group" class="col-1">
+            <div class="input-group-prepend">
+                <div class="input-group-text bg-white">
+                    <i class="fas fa-key"></i>
+                </div>
+            </div>
+            
+        </div>
+        <input name="Hour" type="text" class="form-control col-10 offset-1" placeholder="Hour" [(ngModel)]="service.formData.Hour" required>
+    </div>
+    <div class="form-group" class="row p-2">
+        <div class="input-group" class="col-1">
+            <div class="input-group-prepend">
+                <div class="input-group-text bg-white">
+                    <i class="fas fa-hourglass-end"></i>
+                </div>
+            </div>
+            
+        </div>
+        <input name="Day" type="text" class="form-control col-10 offset-1" placeholder="Day" #Day="ngModel" [(ngModel)]="service.formData.Day" required>
+    </div>
+    <div class="form-group" class="row p-2">
+        <div class="input-group" class="col-1">
+            <div class="input-group-prepend">
+                <div class="input-group-text bg-white">
+                    <i class="fas fa-hourglass-end"></i>
+                </div>
+            </div>
+            
+        </div>
+        <input name="TattooArtist" type="text" class="form-control col-10 offset-1" placeholder="TattooArtist" [(ngModel)]="service.formData.TattooArtist" required>
+    </div>
+    <div class="form-group" class="row p-2">
+        <div class="input-group" class="col-1">
+            <div class="input-group-prepend">
+                <div class="input-group-text bg-white">
+                    <i class="fas fa-hourglass-end"></i>
+                </div>
+            </div>
+            
+        </div>
+        <input name="Client" type="text" class="form-control col-10 offset-1" placeholder="Client" [(ngModel)]="service.formData.Client" required>
+    </div>
+    <div class="form-group">
+        <button class="btn-btn-success btn-lg btn-block p-2" type="submit" [disabled]="form.invalid">Submit</button>
+    </div>
+</form>
+
+<!--
+    Day :string;
+    TattooArtist :string;
+    Client :string;
+-->

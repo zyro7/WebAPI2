@@ -1,0 +1,18 @@
+<nav class="navbar navbar-dark bg-dark">
+    <a  class="navbar-brand text-white">Calendar</a>
+    <button class="btn btn-danger my-2 my-sm-0" (click)="onLogout()">Logout</button>
+</nav>
+<div class="container">
+    <div class="jumbtron">
+        <h1 class="display-4 text-center">Tattoo Calendar</h1>
+        <hr>
+        <div class="row">
+            <div class="col-md-5">
+                <app-calendar-detail></app-calendar-detail>
+            </div>
+            <div class="col-md-7">
+                <app-calendar-detail-list></app-calendar-detail-list>
+            </div>
+        </div>
+    </div>
+</div>
